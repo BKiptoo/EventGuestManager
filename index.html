@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Guest List Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="container bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Event Guest List</h1>
+    <form id="guest-form" class="flex flex-col gap-4 mb-8">
+      <input
+        type="text"
+        id="guest-name"
+        placeholder="Enter guest name"
+        class="p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700"
+        required
+      >
+      <select id="guest-category" class="p-4 border border-gray-200 rounded-lg text-gray-700">
+        <option value="Friend">Friend</option>
+        <option value="Family">Family</option>
+        <option value="Colleague">Colleague</option>
+      </select>
+      <button
+        type="submit"
+        class="px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-semibold"
+      >
+        Add Guest
+      </button>
+    </form>
+    <p class="text-gray-600 mb-6 text-center">Total Guests: <span id="guest-count">0</span></p>
+    <ul id="guest-list" class="space-y-4"></ul>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
