@@ -1,11 +1,11 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #f3f4f6;
 }
 
 .container {
-  max-width: 500px;
-  margin: 20px;
+  max-width: 960px;
+  margin: 20px auto;
 }
 
 .guest-item {
@@ -27,34 +27,28 @@ body {
 
 .rsvp-attending {
   color: #10b981;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 
-.rsvp-attending::before {
-  content: '\f00c';
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  font-size: 14px;
+.rsvp-attending:hover {
+  color: #059669;
 }
 
 .rsvp-not-attending {
   color: #f59e0b;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 
-.rsvp-not-attending::before {
-  content: '\f00d';
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  font-size: 14px;
+.rsvp-not-attending:hover {
+  color: #d97706;
 }
 
 .remove-btn, .edit-btn {
@@ -89,7 +83,7 @@ body {
   padding: 4px 10px;
   border-radius: 12px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .category-family {
@@ -98,7 +92,7 @@ body {
   padding: 4px 10px;
   border-radius: 12px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .category-colleague {
@@ -107,7 +101,7 @@ body {
   padding: 4px 10px;
   border-radius: 12px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .timestamp {
